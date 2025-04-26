@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+.scrollbar-hidden:: -webkit-schrollbar{
+    display: none;
+}
+
+.schrollbar-hidden{
+    -ms-overflow-style: none;
+}
+
+.scrollbar-hidden{
+    scrollbar-width: none;
+}
+
+.scrollbar-hidden{
+    overflow: auto;
+}
+
+@keyframes scrollBackground {
+    0% {
+      background-position: -800px 0px;
+    }
+    100% {
+      background-position: 800px 0px;
+    }
+  }
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  .scroll-bg {
+    animation: scrollBackground 5s linear infinite;
+  }
+  .fadein {
+    animation: fadeIn 1s ease-in-out;
+  }
